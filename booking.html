@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="with=device-width" , initial-scale="1.0">
+    <title> Purple Orchid </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/allmin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+<header class="header">
+    <a href="#" id="logo"><img src="images/logo.png" alt=""></a>
+
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="branches.html">Branches</a></li>
+            <li><a href="adventures.html">Adventures</a></li>
+            <li><a href="restaurents.html">Restaurents</a>
+                <ul>
+                    <li><a href="weddings.html">Weddings</a></li>
+                    <li><a href="meetings.html">Meetings and Conferences</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="booking.html">Booking</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<div class="main-background-booking">
+    <div class="main-text-booking">
+        <i><h1>Book Your Stay!!</h1></i>
+    </div>
+
+</div>
+<!--background image ended -->
+
+<!--hotel booking application-->
+
+<section id="hotel-booking">
+    <h2>Book a Hotel Room</h2>
+    <form>
+        <label for="check-in-date">Check-In Date:</label>
+        <input type="date" id="check-in-date" name="check-in-date" required>
+        <label for="check-out-date">Check-Out Date:</label>
+        <input type="date" id="check-out-date" name="check-out-date" required>
+        <label for="resort-type">Resort Type</label>
+        <select id="resort-type" name="resort-type">
+            <option value="Purple-Orchid-Kandy">Purple Orchid Kandy</option>
+            <option value="Purple-Orchid-Hikkaduwa">Purple Orchid Hikkaduwa</option>
+            <option value="Purple-Orchid-Yala">Purple Orchid Yala</option>
+        </select>
+        <label for="room-type">Room Type:</label>
+        <select id="room-type" name="room-type">
+            <option value="double">Double</option>
+            <option value="double">Triple</option>
+        </select>
+        <label for="adults">Adults:</label>
+        <input type="number" id="adults" name="adults" min="0" max="3" required>
+        <label for="children">Childen:</label>
+        <input type="number" id="children" name="children" min="0" max="3" required>
+        <button type="submit">Book Now</button>
+    </form>
+
+</section>
+<!--hotel booking application ended-->
+
+<!--adventure booking application-->
+<section id="adventure-booking">
+    <h2>Book an Adventure</h2>
+    <form>
+        <label for="adventure-name">Adventure Name:</label>
+        <select id="adventure-type" name="adventure-type">
+            <option value="kandy-city-tour">Kandy city tour</option>
+            <option value="temple-of-the-sacred-tooth-relic">Temple of the sacred tooth relic</option>
+            <option value="tour-to-knuckles-mountain">Tour to knuckles mountain</option>
+            <option value="snorkeling">Snorkeling</option>
+            <option value="surfing">Surfing</option>
+            <option value="stilt-fishing">Stilt fishing</option>
+            <option value="yala-safari">Yala safari</option>
+            <option value="nature-walk">Nature walk</option>
+            <option value="explore-situlpawwa">Explore situlpawwa</option>
+        </select>
+        <label for="adventure-date">Adventure Date:</label>
+        <input type="date" id="adventure-date" name="adventure-date" required>
+        <label for="num-participants">Number of Participants:</label>
+        <input type="number" id="num-participants" name="num-participants" min="1" required>
+        <button type="submit">Book Now</button>
+    </form>
+</section>
+<!--adventure booking ended-->
+<!--Footer-->
+<footer>
+    <div class="row primary">
+        <div class="column about">
+            <h3>Purple Orchid Hotels</h3>
+            <p>
+                Where comfort and luxury embrace you at every turn.
+                Our hotel is more than just a place to stay, it's a gateway to a world of information and connection,
+                making your stay with us unforgettable. Thank you for choosing us, and we look forward to welcoming you
+                soon.
+            </p>
+        </div>
+        <div class="column links">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="branches.html">Branches</a>
+                </li>
+                <li>
+                    <a href="adventures.html">Adventures</a>
+                </li>
+                <li>
+                    <a href="restaurents.html">Restaurents</a>
+                </li>
+                <li>
+                    <a href="booking.html">Booking</a>
+                </li>
+            </ul>
+        </div>
+        <div class="column subscribe">
+            <h3>Newsletter</h3>
+            <div>
+                <input type="email" placeholder="Your email id here"/>
+                <button>submit</button>
+            </div>
+            <div class="social">
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-instagram-square"></i>
+                <i class="fa-brands fa-twitter-square"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="row secondary">
+        <div>
+            <p>
+                <i class="fas fa-phone-alt"></i>
+            </p>
+            <p>+94 61 4 675022</p>
+        </div>
+        <div>
+            <p><i class="fas fa-envelope"></i></p>
+            <p>purpleOrc@gmail.com</p>
+        </div>
+        <div>
+            <p><i class="fas fa-map-marker-alt"></i></p>
+            <p>123,kandy road
+                jaya mawatha, kandy
+                sri lanka</p>
+        </div>
+    </div>
+    <div class="row copyright">
+        <p>Copyright &copy; 2023 Purple Orchid Hotels | All Rights Reserved</p>
+    </div>
+</footer>
+<!--Footer ended-->
+
+</body>
+</html>
